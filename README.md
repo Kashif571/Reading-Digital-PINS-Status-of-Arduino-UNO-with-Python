@@ -1,3 +1,10 @@
 # Digital-Pin-Status
-   The Program reads Digital PINS of Arduino UNO. All the Digital PINS are turned ON by default by using "PULLUP" keyword. Now if "Jumper Wire" is inserted into any Digital PIN it goes OFF. The Program is reading the states of Digital PINS continuously after an interval of 0.5ms (This Interval is coded in Arduino Microprocessor) and it gives "1" and "0" as output. If Jumper wire is pulled into any Digital PIN it gives "0" else it gives "1".
-   Then the "0" and "1" are stored in two arrays namely "predata for maintaining previous state, newdata for maintaining current state" of the Digital PINS and Displays the states on GUI Screen. On Running Arduino UNO first time the "newdata" and "predata" are Same. But next time data is taken and stored only in "newdata" Array. Then a While loop is used that reads Digital PINS continuously and stores them in an "curdata" array and compares it with "predata" array. If "predata" and "curdata" arrays does not match it stores the all the values of "curdata" array are written into the "predata" and Displayed on GUI Screen.
+The Program reads Digital PINS of Arduino UNO with Python Tkinter and Display on GUI Screen. 
+
+# Working of Arduino UNO in Python Program:
+Serial Method is used to read the Digital PINS of Arduino and then the values are stored into an array namely newdata. Then after using it once the array is cleared and stored the next data is read again from Arduino and then displayed it on GUI Screen. This Process Continous...
+
+# Working of Python Tkinter:
+With python Tkinter first, the Heading is Displayed, then a Row of Labels is Displayed below the heading that Displays the DIGITAL PINS heading as PIN0, PIN1, PIN2, etc.
+
+Then in the next row "ON" and "OFF" text is showed that represents the states of the Arduino Board. If a PIN is ON it sends "1" as output. That output is stored in newdata Array and Finally, if the index of the array contains "1" it shows "ON" on GUI Screen. Similarly, if array Contains "0" it shows "OFF" on output Screen.
