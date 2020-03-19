@@ -9,7 +9,7 @@ With python Tkinter first, the Heading is Displayed, then a Row of Labels is Dis
 
 Then in the next row "ON" and "OFF" text is showed that represents the states of the Arduino Board. If a PIN is ON it sends "1" as output. That output is stored in newdata Array and Finally, if the index of the array contains "1" it shows "ON" on GUI Screen. Similarly, if array Contains "0" it shows "OFF" on output Screen.
 
-#Code with Descripion:
+# Code with Descripion:
 from serial import Serial
 import time
 from tkinter import *
