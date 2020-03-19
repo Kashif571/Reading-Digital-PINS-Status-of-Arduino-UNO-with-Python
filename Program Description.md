@@ -11,8 +11,11 @@ Then in the next row "ON" and "OFF" text is showed that represents the states of
 
 # Code with Descripion:
 from serial import Serial
+
 import time
+
 from tkinter import *
+
 import tkinter as tk
 
 #Reading Arduino
